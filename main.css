@@ -1,0 +1,113 @@
+html * {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+.clearer {
+	clear: both; /* ferme le flux des floats */
+}
+
+#main-title {
+	background-color: #343434;
+}
+
+#main-title img, #main-title h1, #main-title .links {
+	float: left;
+}
+
+#main-title img {
+	width: 15%;
+}
+
+#main-title h1 {
+	font-size: 28px;
+	width: 70%;
+	text-align: center;
+	margin-top: 0;
+	color: #fff;
+	margin-top: 10px;
+	font-weight: 100;
+}
+
+#main-title h1 .small a {
+	font-size: 22px;
+	color: #aaa;
+	font-weight: 100;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+#main-title h1 .small a:hover {
+	text-decoration: underline;
+}
+
+#minerals-nav ul {
+	list-style-type: none; /* enlever les puces de la liste */
+	width: 100%;
+	padding-left: 0; /* padding : marge intérieure */;
+	margin: 0;
+	background-color: #343434;
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+#minerals-nav ul li {
+	float: left;
+	width: 9.9%;
+	text-align: center;
+
+	border-right: 1px solid #000;
+}
+
+#minerals-nav ul li:last-child {
+	border-right: none;
+}
+
+#minerals-nav ul li a {
+	font-size: 18px;
+	text-decoration: none; /* ne pas souligner les liens */
+	color: #fff;
+
+	padding-top: 20px; 			/* ces lignes agrandissent la marge intérieure 	*/
+	padding-bottom: 20px;		/* des éléments (gagne en hauteur) 				*/
+	display: block;				/* de base les <a></a> sont display inline (ne prend pas en compte le padding), on met donc block */
+}
+
+#minerals-nav ul li a:hover,
+#minerals-nav ul li a.active { /* hover = pseudo classe utilisée lorsque l'élément est survolé */
+	background-color: #555;
+}
+
+/* style des pages de minéraux */
+
+#main-content article {
+	opacity: 0; /* cache les pages non actives */
+	position: absolute;
+
+	transition: opacity 0.5s; /* transition pour la propriété opacity de 0.3s (au changement de page) */
+}
+
+#main-content article.active {
+	opacity: 1;
+}
+
+#main-content article .col {
+	float: left;
+	width: 29%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#main-content article figure img {
+	max-width: 100%;
+	display: inline; /* inline pour pouvoir être centrée via le text-align: center du dessous */
+}
+
+#main-content article figure {
+	text-align: center;
+}

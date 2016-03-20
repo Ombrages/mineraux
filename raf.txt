@@ -1,0 +1,7 @@
+- rendre images upmc et polytech transparente et non pixelisée e gardant la même dimension ou en prenant celle quand affiché
+- Trouver des images pour chaque minéral et les rendre aux bonnes dimension + transparente et non pixélisées (limiter taille)
+- Remplir tous les textes des pages des minéraux
+- Remplir la page des sources
+- Préparer image (bonnes dimensions, extensions) et textes/infos pour partie présentation des élèves
+
+Notes : les images sont toutes en .png
